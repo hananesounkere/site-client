@@ -4,25 +4,23 @@
   <meta charset="UTF-8">
   <title>Contact | Luxury</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<section class="hero">
-  <!-- Video background -->
-  <video autoplay muted loop playsinline class="video-bg">
-    <source src="snoop.mp4" type="video/mp4">
-    Votre navigateur ne supporte pas les vidéos.
-  </video>
 
-  <!-- Contenu du hero -->
-  <div class="hero-content">
-    <h1>L’EXCELLENCE<br>À L’ÉTAT PUR</h1>
-    <a href="produits.html" class="btn-outline">Découvrir</a>
-  </div>
-</section>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<a href="https://wa.me/14388648055" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
 
 <body>
+<div class="lang-switch">
+  <button onclick="setLang('fr')">FR</button>
+  <button onclick="setLang('en')">EN</button>
+</div>
 
 <header class="header">
+ <header class="header">
   <img src="images/logo.jpg" class="logo-img">
   <nav class="nav">
     <a href="index.html">Accueil</a>
@@ -30,22 +28,113 @@
     <a href="contact.html">Contact</a>
   </nav>
 </header>
+</header>
 
 <section class="contact fade-in">
-  <h2>Contact</h2>
-  <p>Pour toute demande privée ou professionnelle.</p>
+  <h2>Contactez-nous</h2>
+  <p>Choisissez votre moyen de contact</p>
 
-  <form>
-    <input type="text" placeholder="Nom">
-    <input type="email" placeholder="Email">
-    <textarea placeholder="Message"></textarea>
-    <button class="btn-outline">Envoyer</button>
+  <!-- FORMULAIRE -->
+  <form id="contactForm">
+  <input type="text" id="name" placeholder="Votre nom" required>
+  <input type="email" id="email" placeholder="Votre email" required>
+  <textarea id="message" placeholder="Votre message" rows="5" required></textarea>
+
+  <button type="submit">Envoyer</button>
   </form>
-</section>
+  <script>
+  const form = document.getElementById('contactForm');
+  const successMessage = document.getElementById('successMessage');
 
-<footer class="footer">
-  © 2026 Luxury
-</footer>
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    successMessage.style.display = "block";
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    setTimeout(() => {
+      window.location.href =
+        `mailto:folachadesounkere@gmail.com` +
+        `?subject=Contact Luxury` +
+        `&body=Nom: ${encodeURIComponent(name)}` +
+        `%0AEmail: ${encodeURIComponent(email)}` +
+        `%0AMessage:%0A${encodeURIComponent(message)}`;
+    }, 1200);
+  });
+</script>
+
+
+<p id="successMessage" class="success-message">
+  ✅ Merci, votre message est prêt à être envoyé.
+</p>
+
+
+<div class="contact-alt">
+  <a href="mailto:folachadesounkere@gmail.com" class="alt-btn">
+    📧 M’écrire sur email
+  </a>
+
+  <a id="whatsappLink" class="alt-btn whatsapp" target="_blank">
+    💬 Me contacter sur WhatsApp
+  </a>
+</div>
+
+<script>
+  const form = document.getElementById('contactForm');
+  const whatsappLink = document.getElementById('whatsappLink');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    const mailtoLink =
+      `mailto:folachadesounkere@gmail.com` +
+      `?subject=Contact depuis le site Luxury` +
+      `&body=Nom: ${encodeURIComponent(name)}` +
+      `%0AEmail: ${encodeURIComponent(email)}` +
+      `%0AMessage:%0A${encodeURIComponent(message)}`;
+
+    window.location.href = mailtoLink;
+  });
+
+  whatsappLink.addEventListener('click', function () {
+    const name = document.getElementById('name').value || '';
+    const message = document.getElementById('message').value || '';
+
+    const text = encodeURIComponent(
+      `Bonjour, je suis ${name}. ${message}`
+    );
+
+    whatsappLink.href = `https://wa.me/14388648055?text=${text}`;
+  });
+</script>
+<script>
+  function setLang(lang) {
+    if (lang === 'en') {
+      document.querySelector('h2').innerText = "Contact";
+      document.querySelector('.contact p').innerText =
+        "For any private or professional request.";
+      document.getElementById('name').placeholder = "Your name";
+      document.getElementById('email').placeholder = "Your email";
+      document.getElementById('message').placeholder = "Your message";
+    } else {
+      document.querySelector('h2').innerText = "Contact";
+      document.querySelector('.contact p').innerText =
+        "Pour toute demande privée ou professionnelle.";
+      document.getElementById('name').placeholder = "Votre nom";
+      document.getElementById('email').placeholder = "Votre email";
+      document.getElementById('message').placeholder = "Votre message";
+    }
+  }
+</script>
+
+
 
 </body>
 </html>
