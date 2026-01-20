@@ -1,99 +1,252 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nos Produits | Luxury</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos Produits | Luxury</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet">
 </head>
-<section class="hero">
-  <!-- Video background -->
-  <video autoplay muted loop playsinline class="video-bg">
-    <source src="snoop.mp4" type="video/mp4">
-    Votre navigateur ne supporte pas les vidéos.
-  </video>
-
-  <!-- Contenu du hero -->
-  <div class="hero-content">
-    <h1>L’EXCELLENCE<br>À L’ÉTAT PUR</h1>
-    <a href="produits.html" class="btn-outline">Découvrir</a>
-  </div>
-</section>
 
 <body>
 
+<!-- HEADER -->
 <header class="header">
-    <img src="images/logo.jpg" alt="Logo" class="logo-img">
-    <nav class="nav">
-        <a href="index.html">Accueil</a>
-        <a href="produits.html">Produits</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+  <img src="assets/images/logo.jpg" class="logo-img" alt="Luxury">
+  <nav class="nav">
+    <a href="index.html">Accueil</a>
+    <a href="produits.html" class="active">Produits</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
-<section class="featured">
-    <h3>Notre Collection</h3>
+<!-- HERO AVEC VIDÉO -->
+<section class="hero hero-small">
 
-    <div class="product-grid">
+  <video autoplay muted loop playsinline class="video-bg">
+    <source src="snoop.mp4" type="video/mp4">
+  </video>
 
-        <!-- PRODUITS 1 à 27 -->
-        <!-- Tu peux changer noms/prix plus tard -->
+  <div class="hero-content">
+    <h1>Notre Collection</h1>
+  </div>
 
-        <!-- Généré proprement -->
-        <!-- p1.jpg à p27.jpg -->
-
-        <!-- LIGNE 1 -->
-        <div class="product-card"><img src="images/products/p1.jpg"><h4>Produit Luxe 01</h4><p>1 200 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-        <div class="product-card"><img src="images/products/p2.jpg"><h4>Produit Luxe 02</h4><p>1 450 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-        <div class="product-card"><img src="images/products/p3.jpg"><h4>Produit Luxe 03</h4><p>1 800 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-
-        <!-- LIGNE 2 -->
-        <div class="product-card"><img src="images/products/p4.jpg"><h4>Produit Luxe 04</h4><p>2 100 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-        <div class="product-card"><img src="images/products/p5.jpg"><h4>Produit Luxe 05</h4><p>2 350 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-        <div class="product-card"><img src="images/products/p6.jpg"><h4>Produit Luxe 06</h4><p>2 800 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-
-        <!-- LIGNE 3 -->
-        <div class="product-card"><img src="images/products/p7.jpg"><h4>FROMAGE</h4><p>1 600 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-        <div class="product-card"><img src="images/products/p8.jpg"><h4>Produit Luxe 08</h4><p>1 950 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-        <div class="product-card"><img src="images/products/p9.jpg"><h4>Produit Luxe 09</h4><p>2 200 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-
-        <!-- LIGNE 4 -->
-        <div class="product-card"><img src="images/products/p10.jpg"><h4>Produit Luxe 10</h4><p>3 000 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-        <div class="product-card"><img src="images/products/p11.jpg"><h4>Produit Luxe 11</h4><p>2 700 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-        <div class="product-card"><img src="images/products/p12.jpg"><h4>Produit Luxe 12</h4><p>3 400 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-
-        <!-- LIGNE 5 -->
-        <div class="product-card"><img src="images/products/p13.jpg"><h4>Produit Luxe 13</h4><p>1 300 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-        <div class="product-card"><img src="images/products/p14.jpg"><h4>Produit Luxe 14</h4><p>1 900 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-        <div class="product-card"><img src="images/products/p15.jpg"><h4>LANGUE DE CHAT</h4><p>2 500 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-
-        <!-- LIGNE 6 -->
-        <div class="product-card"><img src="images/products/p16.jpg"><h4>ESCARGOT FUME BENIN</h4><p>2 100 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-        <div class="product-card"><img src="images/products/p17.jpg"><h4>CREVETTES EN POUDRE BENIN</h4><p>3 200 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-        <div class="product-card"><img src="images/products/p18.jpg"><h4>CUBE BIO SAVEUR POULET</h4><p>1 750 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-
-        <!-- LIGNE 7 -->
-        <div class="product-card"><img src="images/products/p19.jpg"><h4>CUBE BIO SAVEUR LEGUMES</h4><p>2 950 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-        <div class="product-card"><img src="images/products/p20.jpg"><h4>CUBE BIO SAVEUR VIANDE</h4><p>3 800 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-        <div class="product-card"><img src="images/products/p21.jpg"><h4>KONKADA BENIN</h4><p>2 600 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-
-        <!-- LIGNE 8 -->
-        <div class="product-card"><img src="images/products/p22.jpg"><h4>CACAHOUETE BENIN</h4><p>1 400 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-        <div class="product-card"><img src="images/products/p23.jpg"><h4>AHAYO BENIN</h4><p>1 850 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-        <div class="product-card"><img src="images/products/p24.jpg"><h4>NOUGAT BENIN</h4><p>2 300 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-
-        <!-- LIGNE 9 -->
-        <div class="product-card"><img src="images/products/p25.jpg"><h4>COCO RAPE</h4><p>3 100 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-        <div class="product-card"><img src="images/products/p26.jpg"><h4>LANGUE DE CHAT</h4><p>2 750 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-        <div class="product-card"><img src="images/products/p27.jpg"><h4></h4><p>4 200 €</p><a href="produit.html" class="product-btn">Voir le produit</a></div>
-
-    </div>
 </section>
 
+<!-- PRODUITS -->
+<section class="featured fade-in">
+
+  <h3>Produits Disponibles</h3>
+
+  <div class="product-grid">
+
+    <!-- LIGNE 1 -->
+    <div class="product-card">
+      <img src="images/products/p1.jpg">
+      <h4>Produit Luxe 01</h4>
+      <p>1 200 €</p>
+      <a href="produit.html?id=1" class="product-btn">Voir le produit</a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/products/p2.jpg">
+      <h4>Produit Luxe 02</h4>
+      <p>1 450 €</p>
+      <a href="produit.html?id=2" class="product-btn">Voir le produit</a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/products/p3.jpg">
+      <h4>Produit Luxe 03</h4>
+      <p>1 800 €</p>
+      <a href="produit.html?id=3" class="product-btn">Voir le produit</a>
+    </div>
+
+    <!-- LIGNE 2 -->
+    <div class="product-card">
+      <img src="images/products/p4.jpg">
+      <h4>Produit Luxe 04</h4>
+      <p>2 100 €</p>
+      <a href="produit.html?id=4" class="product-btn">Voir le produit</a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/products/p5.jpg">
+      <h4>Produit Luxe 05</h4>
+      <p>2 350 €</p>
+      <a href="produit.html?id=5" class="product-btn">Voir le produit</a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/products/p6.jpg">
+      <h4>Produit Luxe 06</h4>
+      <p>2 800 €</p>
+      <a href="produit.html?id=6" class="product-btn">Voir le produit</a>
+    </div>
+
+    <!-- LIGNE 3 -->
+    <div class="product-card">
+      <img src="images/products/p7.jpg">
+      <h4>Fromage</h4>
+      <p>1 600 €</p>
+      <a href="produit.html?id=7" class="product-btn">Voir le produit</a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/products/p8.jpg">
+      <h4>Produit Luxe 08</h4>
+      <p>1 950 €</p>
+      <a href="produit.html?id=8" class="product-btn">Voir le produit</a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/products/p9.jpg">
+      <h4>Produit Luxe 09</h4>
+      <p>2 200 €</p>
+      <a href="produit.html?id=9" class="product-btn">Voir le produit</a>
+    </div>
+
+    <!-- LIGNE 4 -->
+    <div class="product-card">
+      <img src="images/products/p10.jpg">
+      <h4>Produit Luxe 10</h4>
+      <p>3 000 €</p>
+      <a href="produit.html?id=10" class="product-btn">Voir le produit</a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/products/p11.jpg">
+      <h4>Produit Luxe 11</h4>
+      <p>2 700 €</p>
+      <a href="produit.html?id=11" class="product-btn">Voir le produit</a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/products/p12.jpg">
+      <h4>Produit Luxe 12</h4>
+      <p>3 400 €</p>
+      <a href="produit.html?id=12" class="product-btn">Voir le produit</a>
+    </div>
+
+    <!-- LIGNE 5 -->
+    <div class="product-card">
+      <img src="images/products/p13.jpg">
+      <h4>Produit Luxe 13</h4>
+      <p>1 300 €</p>
+      <a href="produit.html?id=13" class="product-btn">Voir le produit</a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/products/p14.jpg">
+      <h4>Produit Luxe 14</h4>
+      <p>1 900 €</p>
+      <a href="produit.html?id=14" class="product-btn">Voir le produit</a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/products/p15.jpg">
+      <h4>Langue de chat</h4>
+      <p>2 500 €</p>
+      <a href="produit.html?id=15" class="product-btn">Voir le produit</a>
+    </div>
+
+    <!-- LIGNE 6 -->
+    <div class="product-card">
+      <img src="images/products/p16.jpg">
+      <h4>Escargot fumé Bénin</h4>
+      <p>2 100 €</p>
+      <a href="produit.html?id=16" class="product-btn">Voir le produit</a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/products/p17.jpg">
+      <h4>Crevettes en poudre</h4>
+      <p>3 200 €</p>
+      <a href="produit.html?id=17" class="product-btn">Voir le produit</a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/products/p18.jpg">
+      <h4>Cube bio poulet</h4>
+      <p>1 750 €</p>
+      <a href="produit.html?id=18" class="product-btn">Voir le produit</a>
+    </div>
+
+    <!-- LIGNE 7 -->
+    <div class="product-card">
+      <img src="images/products/p19.jpg">
+      <h4>Cube bio légumes</h4>
+      <p>2 950 €</p>
+      <a href="produit.html?id=19" class="product-btn">Voir le produit</a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/products/p20.jpg">
+      <h4>Cube bio viande</h4>
+      <p>3 800 €</p>
+      <a href="produit.html?id=20" class="product-btn">Voir le produit</a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/products/p21.jpg">
+      <h4>Konkada Bénin</h4>
+      <p>2 600 €</p>
+      <a href="produit.html?id=21" class="product-btn">Voir le produit</a>
+    </div>
+
+    <!-- LIGNE 8 -->
+    <div class="product-card">
+      <img src="images/products/p22.jpg">
+      <h4>Cacahouète Bénin</h4>
+      <p>1 400 €</p>
+      <a href="produit.html?id=22" class="product-btn">Voir le produit</a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/products/p23.jpg">
+      <h4>Ahayo Bénin</h4>
+      <p>1 850 €</p>
+      <a href="produit.html?id=23" class="product-btn">Voir le produit</a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/products/p24.jpg">
+      <h4>Nougat Bénin</h4>
+      <p>2 300 €</p>
+      <a href="produit.html?id=24" class="product-btn">Voir le produit</a>
+    </div>
+
+    <!-- LIGNE 9 -->
+    <div class="product-card">
+      <img src="images/products/p25.jpg">
+      <h4>Coco râpé</h4>
+      <p>3 100 €</p>
+      <a href="produit.html?id=25" class="product-btn">Voir le produit</a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/products/p26.jpg">
+      <h4>Langue de chat</h4>
+      <p>2 750 €</p>
+      <a href="produit.html?id=26" class="product-btn">Voir le produit</a>
+    </div>
+
+    <div class="product-card">
+      <img src="images/products/p27.jpg">
+      <h4>Produit Luxe 27</h4>
+      <p>4 200 €</p>
+      <a href="produit.html?id=27" class="product-btn">Voir le produit</a>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
 <footer class="footer">
-    © 2026 Luxury Store
+  © 2026 Luxury Store
 </footer>
 
 </body>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Produit | Luxury</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+  <img src="images/logo.jpg" class="logo-img" alt="Luxury">
+  <nav class="nav">
+    <a href="index.html">Accueil</a>
+    <a href="produits.html">Produits</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="product-detail fade-in">
+  <div class="product-detail-container">
+
+    <div class="product-detail-image">
+      <img id="productImage" src="" alt="">
+    </div>
+
+    <div class="product-detail-info">
+      <h1 id="productName"></h1>
+      <p class="price" id="productPrice"></p>
+      <p class="description" id="productDescription"></p>
+
+      <ul class="features">
+        <li>✔ Qualité premium</li>
+        <li>✔ Produit sélectionné</li>
+        <li>✔ Livraison sécurisée</li>
+      </ul>
+
+      <a href="contact.html" class="btn-outline">Commander</a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  © 2026 Luxury Store
+</footer>
+
+<script>
+const produits = [
+  { id:1, name:"Produit Luxe 01", price:"1 200 €", image:"images/products/p1.jpg" },
+  { id:2, name:"Produit Luxe 02", price:"1 450 €", image:"images/products/p2.jpg" },
+  { id:3, name:"Produit Luxe 03", price:"1 800 €", image:"images/products/p3.jpg" },
+  { id:4, name:"Produit Luxe 04", price:"2 100 €", image:"images/products/p4.jpg" },
+  { id:5, name:"Produit Luxe 05", price:"2 350 €", image:"images/products/p5.jpg" },
+  { id:6, name:"Produit Luxe 06", price:"2 800 €", image:"images/products/p6.jpg" },
+  { id:7, name:"FROMAGE", price:"1 600 €", image:"images/products/p7.jpg" },
+  { id:8, name:"Produit Luxe 08", price:"1 950 €", image:"images/products/p8.jpg" },
+  { id:9, name:"Produit Luxe 09", price:"2 200 €", image:"images/products/p9.jpg" },
+  { id:10, name:"Produit Luxe 10", price:"3 000 €", image:"images/products/p10.jpg" },
+  { id:11, name:"Produit Luxe 11", price:"2 700 €", image:"images/products/p11.jpg" },
+  { id:12, name:"Produit Luxe 12", price:"3 400 €", image:"images/products/p12.jpg" },
+  { id:13, name:"Produit Luxe 13", price:"1 300 €", image:"images/products/p13.jpg" },
+  { id:14, name:"Produit Luxe 14", price:"1 900 €", image:"images/products/p14.jpg" },
+  { id:15, name:"LANGUE DE CHAT", price:"2 500 €", image:"images/products/p15.jpg" },
+  { id:16, name:"ESCARGOT FUMÉ BÉNIN", price:"2 100 €", image:"images/products/p16.jpg" },
+  { id:17, name:"CREVETTES EN POUDRE BÉNIN", price:"3 200 €", image:"images/products/p17.jpg" },
+  { id:18, name:"CUBE BIO SAVEUR POULET", price:"1 750 €", image:"images/products/p18.jpg" },
+  { id:19, name:"CUBE BIO SAVEUR LÉGUMES", price:"2 950 €", image:"images/products/p19.jpg" },
+  { id:20, name:"CUBE BIO SAVEUR VIANDE", price:"3 800 €", image:"images/products/p20.jpg" },
+  { id:21, name:"KONKADA BÉNIN", price:"2 600 €", image:"images/products/p21.jpg" },
+  { id:22, name:"CACAHOUÈTE BÉNIN", price:"1 400 €", image:"images/products/p22.jpg" },
+  { id:23, name:"AHAYO BÉNIN", price:"1 850 €", image:"images/products/p23.jpg" },
+  { id:24, name:"NOUGAT BÉNIN", price:"2 300 €", image:"images/products/p24.jpg" },
+  { id:25, name:"COCO RÂPÉ", price:"3 100 €", image:"images/products/p25.jpg" },
+  { id:26, name:"LANGUE DE CHAT", price:"2 750 €", image:"images/products/p26.jpg" },
+  { id:27, name:"Produit Luxe 27", price:"4 200 €", image:"images/products/p27.jpg" }
+];
+
+const params = new URLSearchParams(window.location.search);
+const id = parseInt(params.get("id"));
+const produit = produits.find(p => p.id === id);
+
+if (produit) {
+  document.getElementById("productName").textContent = produit.name;
+  document.getElementById("productPrice").textContent = produit.price;
+  document.getElementById("productImage").src = produit.image;
+  document.getElementById("productImage").alt = produit.name;
+  document.getElementById("productDescription").textContent =
+    "Produit d’exception sélectionné pour sa qualité et son authenticité.";
+}
+</script>
+
+</body>
+</html>
